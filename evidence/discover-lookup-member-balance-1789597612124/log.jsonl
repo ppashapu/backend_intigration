@@ -1,0 +1,83 @@
+{
+  "ts" : "2026-09-16T22:26:52.239979Z",
+  "type" : "discovery_start",
+  "goal" : "Look up member 12345 and read their current savings balance, confirming the member detail page is reached.",
+  "genuineLlm" : false
+}
+{
+  "ts" : "2026-09-16T22:26:52.255496Z",
+  "type" : "observe",
+  "elementCount" : 0,
+  "url" : "null"
+}
+{
+  "ts" : "2026-09-16T22:26:52.257487Z",
+  "type" : "decide",
+  "reasoning" : "Start at the search frameset",
+  "action" : "NAVIGATE"
+}
+{
+  "ts" : "2026-09-16T22:26:52.343461Z",
+  "type" : "observe",
+  "elementCount" : 2,
+  "url" : "http://127.0.0.1:8085/search"
+}
+{
+  "ts" : "2026-09-16T22:26:52.343768Z",
+  "type" : "decide",
+  "reasoning" : "Type the member ID into the search box",
+  "action" : "TYPE"
+}
+{
+  "ts" : "2026-09-16T22:26:52.346497Z",
+  "type" : "observe",
+  "elementCount" : 2,
+  "url" : "http://127.0.0.1:8085/search"
+}
+{
+  "ts" : "2026-09-16T22:26:52.346662Z",
+  "type" : "decide",
+  "reasoning" : "Submit the search",
+  "action" : "CLICK"
+}
+{
+  "ts" : "2026-09-16T22:26:52.350792Z",
+  "type" : "observe",
+  "elementCount" : 3,
+  "url" : "http://127.0.0.1:8085/search"
+}
+{
+  "ts" : "2026-09-16T22:26:52.350965Z",
+  "type" : "decide",
+  "reasoning" : "Open the member detail view",
+  "action" : "CLICK"
+}
+{
+  "ts" : "2026-09-16T22:26:52.354042Z",
+  "type" : "observe",
+  "elementCount" : 2,
+  "url" : "http://127.0.0.1:8085/member/view?id=12345"
+}
+{
+  "ts" : "2026-09-16T22:26:52.354214Z",
+  "type" : "decide",
+  "reasoning" : "Read the balance",
+  "action" : "EXTRACT"
+}
+{
+  "ts" : "2026-09-16T22:26:52.354977Z",
+  "type" : "observe",
+  "elementCount" : 2,
+  "url" : "http://127.0.0.1:8085/member/view?id=12345"
+}
+{
+  "ts" : "2026-09-16T22:26:52.355139Z",
+  "type" : "decide",
+  "reasoning" : "Goal achieved",
+  "action" : "DONE"
+}
+{
+  "ts" : "2026-09-16T22:26:52.358012Z",
+  "type" : "discovery_done",
+  "stepCount" : 5
+}

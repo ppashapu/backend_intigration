@@ -1,0 +1,26 @@
+{
+  "ts" : "2026-09-16T22:26:52.410454Z",
+  "type" : "replay_step_start",
+  "stepId" : 1,
+  "description" : "Navigate to /search",
+  "action" : "NAVIGATE"
+}
+{
+  "ts" : "2026-09-16T22:26:52.413748Z",
+  "type" : "replay_step_start",
+  "stepId" : 2,
+  "description" : "Type into \"memberId\"",
+  "action" : "TYPE"
+}
+{
+  "ts" : "2026-09-16T22:26:52.414195Z",
+  "type" : "replay_step_start",
+  "stepId" : 3,
+  "description" : "Click \"Search\"",
+  "action" : "CLICK"
+}
+{
+  "ts" : "2026-09-16T22:26:52.416105Z",
+  "type" : "business_outcome",
+  "code" : "MEMBER_NOT_FOUND"
+}

@@ -7,6 +7,6 @@
   "businessOutcomeMessage" : null,
   "failure" : null,
   "recoveredEvents" : [ "step 3: recovered from 'SYSTEM_BUSY' (attempt 1)" ],
-  "evidenceDir" : "./evidence/replay-transient-recovered-1789586874960",
-  "durationMs" : 258
+  "evidenceDir" : "./evidence/replay-transient-recovered-1789597612418",
+  "durationMs" : 14
 }

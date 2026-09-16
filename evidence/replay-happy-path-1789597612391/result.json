@@ -7,6 +7,6 @@
   "businessOutcomeMessage" : null,
   "failure" : null,
   "recoveredEvents" : [ ],
-  "evidenceDir" : "./evidence/replay-happy-path-1789586874625",
-  "durationMs" : 148
+  "evidenceDir" : "./evidence/replay-happy-path-1789597612391",
+  "durationMs" : 10
 }
