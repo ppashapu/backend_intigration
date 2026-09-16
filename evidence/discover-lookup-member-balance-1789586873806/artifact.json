@@ -1,0 +1,126 @@
+{
+  "id" : "lookup-member-balance",
+  "version" : 1,
+  "status" : "DRAFT",
+  "name" : "Look up member savings balance",
+  "goalDescription" : "Look up member 12345 and read their current savings balance, confirming the member detail page is reached.",
+  "appTarget" : {
+    "appId" : "lookup-member-balance",
+    "vendorProduct" : "legacy-core-banking-demo",
+    "baseUrl" : "http://127.0.0.1:8097",
+    "tenantId" : "base"
+  },
+  "inputParams" : [ {
+    "name" : "memberId",
+    "type" : "STRING",
+    "required" : true,
+    "description" : "The member to look up",
+    "example" : "12345"
+  } ],
+  "outputs" : [ {
+    "name" : "balance",
+    "type" : "STRING",
+    "required" : true,
+    "description" : "Extracted value: balance",
+    "example" : null
+  } ],
+  "steps" : [ {
+    "stepId" : 1,
+    "action" : "NAVIGATE",
+    "description" : "Navigate to /search",
+    "target" : null,
+    "value" : "/search",
+    "extractAs" : null,
+    "riskLevel" : "SAFE",
+    "timeoutMs" : 8000
+  }, {
+    "stepId" : 2,
+    "action" : "TYPE",
+    "description" : "Type into \"memberId\"",
+    "target" : {
+      "strategies" : [ {
+        "kind" : "FIELD_NAME_ATTR",
+        "cssSelector" : "input[name=\"memberId\"]",
+        "note" : "matches on the HTML name attribute, independent of DOM position"
+      }, {
+        "kind" : "POSITIONAL_CSS",
+        "cssSelector" : "form:nth-of-type(1) > table:nth-of-type(1) > tbody:nth-of-type(1) > tr:nth-of-type(1) > td:nth-of-type(2) > input:nth-of-type(1)",
+        "note" : "structural fallback; brittle to markup reordering"
+      } ],
+      "frameChain" : [ "searchForm" ]
+    },
+    "value" : "{{memberId}}",
+    "extractAs" : null,
+    "riskLevel" : "SAFE",
+    "timeoutMs" : 5000
+  }, {
+    "stepId" : 3,
+    "action" : "CLICK",
+    "description" : "Click \"Search\"",
+    "target" : {
+      "strategies" : [ {
+        "kind" : "VISIBLE_TEXT_OR_VALUE",
+        "cssSelector" : "input[value=\"Search\"]",
+        "note" : "matches on visible text/value \"Search\""
+      }, {
+        "kind" : "POSITIONAL_CSS",
+        "cssSelector" : "form:nth-of-type(1) > table:nth-of-type(1) > tbody:nth-of-type(1) > tr:nth-of-type(1) > td:nth-of-type(3) > input:nth-of-type(1)",
+        "note" : "structural fallback; brittle to markup reordering"
+      } ],
+      "frameChain" : [ "searchForm" ]
+    },
+    "value" : null,
+    "extractAs" : null,
+    "riskLevel" : "SAFE",
+    "timeoutMs" : 5000
+  }, {
+    "stepId" : 4,
+    "action" : "CLICK",
+    "description" : "Click \"View\"",
+    "target" : {
+      "strategies" : [ {
+        "kind" : "VISIBLE_TEXT_OR_VALUE",
+        "cssSelector" : "a:contains(View)",
+        "note" : "matches on visible text/value \"View\""
+      }, {
+        "kind" : "POSITIONAL_CSS",
+        "cssSelector" : "table:nth-of-type(1) > tbody:nth-of-type(1) > tr:nth-of-type(2) > td:nth-of-type(3) > a:nth-of-type(1)",
+        "note" : "structural fallback; brittle to markup reordering"
+      } ],
+      "frameChain" : [ "resultsFrame" ]
+    },
+    "value" : null,
+    "extractAs" : null,
+    "riskLevel" : "SAFE",
+    "timeoutMs" : 5000
+  }, {
+    "stepId" : 5,
+    "action" : "EXTRACT",
+    "description" : "Extract \"balance\" from \"$4,210.55\"",
+    "target" : {
+      "strategies" : [ {
+        "kind" : "TEST_ID",
+        "cssSelector" : "#bal",
+        "note" : "matches on a stable element id"
+      }, {
+        "kind" : "POSITIONAL_CSS",
+        "cssSelector" : "table:nth-of-type(1) > tbody:nth-of-type(1) > tr:nth-of-type(3) > td:nth-of-type(2)",
+        "note" : "structural fallback; brittle to markup reordering"
+      } ],
+      "frameChain" : [ ]
+    },
+    "value" : null,
+    "extractAs" : "balance",
+    "riskLevel" : "SAFE",
+    "timeoutMs" : 5000
+  } ],
+  "checkpoint" : {
+    "kind" : "URL_CONTAINS",
+    "expectedValue" : "/member/view",
+    "target" : null,
+    "description" : "Replay must land on a URL containing /member/view"
+  },
+  "overallRisk" : "SAFE",
+  "sourceDiscoveryRunId" : "discover-lookup-member-balance-1789586873806",
+  "createdAt" : "2026-09-16T19:27:54.534649218Z"
+}

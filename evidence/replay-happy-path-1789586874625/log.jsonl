@@ -1,0 +1,42 @@
+{
+  "ts" : "2026-09-16T19:27:54.634449406Z",
+  "type" : "replay_step_start",
+  "action" : "NAVIGATE",
+  "stepId" : 1,
+  "description" : "Navigate to /search"
+}
+{
+  "ts" : "2026-09-16T19:27:54.686857003Z",
+  "type" : "replay_step_start",
+  "action" : "TYPE",
+  "stepId" : 2,
+  "description" : "Type into \"memberId\""
+}
+{
+  "ts" : "2026-09-16T19:27:54.687413082Z",
+  "type" : "replay_step_start",
+  "action" : "CLICK",
+  "stepId" : 3,
+  "description" : "Click \"Search\""
+}
+{
+  "ts" : "2026-09-16T19:27:54.734127309Z",
+  "type" : "replay_step_start",
+  "action" : "CLICK",
+  "stepId" : 4,
+  "description" : "Click \"View\""
+}
+{
+  "ts" : "2026-09-16T19:27:54.782158478Z",
+  "type" : "replay_step_start",
+  "action" : "EXTRACT",
+  "stepId" : 5,
+  "description" : "Extract \"balance\" from \"$4,210.55\""
+}
+{
+  "ts" : "2026-09-16T19:27:54.782681501Z",
+  "type" : "replay_success",
+  "outputs" : {
+    "balance" : "$4,210.55"
+  }
+}

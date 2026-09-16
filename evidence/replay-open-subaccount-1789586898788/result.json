@@ -1,0 +1,10 @@
+{
+  "outcomeType" : "SUCCESS",
+  "outputs" : { },
+  "businessOutcomeCode" : null,
+  "businessOutcomeMessage" : null,
+  "failure" : null,
+  "recoveredEvents" : [ ],
+  "evidenceDir" : "/tmp/sub-evidence/replay-open-subaccount-1789586898788",
+  "durationMs" : 189
+}

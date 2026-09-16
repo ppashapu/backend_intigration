@@ -1,0 +1,10 @@
+{
+  "outcomeType" : "BUSINESS_OUTCOME",
+  "outputs" : { },
+  "businessOutcomeCode" : "MEMBER_NOT_FOUND",
+  "businessOutcomeMessage" : "No matching member record",
+  "failure" : null,
+  "recoveredEvents" : [ ],
+  "evidenceDir" : "./evidence/replay-not-found-1789586874809",
+  "durationMs" : 150
+}

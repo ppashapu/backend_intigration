@@ -1,0 +1,6 @@
+target/
+out/
+*.class
+sources.txt
+.idea/
+*.iml

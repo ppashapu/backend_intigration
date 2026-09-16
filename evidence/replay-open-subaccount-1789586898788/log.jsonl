@@ -1,0 +1,33 @@
+{
+  "ts" : "2026-09-16T19:28:18.801441672Z",
+  "type" : "replay_step_start",
+  "stepId" : 1,
+  "action" : "NAVIGATE",
+  "description" : "Navigate to form"
+}
+{
+  "ts" : "2026-09-16T19:28:18.918254352Z",
+  "type" : "replay_step_start",
+  "stepId" : 2,
+  "action" : "TYPE",
+  "description" : "Type deposit"
+}
+{
+  "ts" : "2026-09-16T19:28:18.920309217Z",
+  "type" : "replay_step_start",
+  "stepId" : 3,
+  "action" : "CLICK",
+  "description" : "Continue"
+}
+{
+  "ts" : "2026-09-16T19:28:18.928841399Z",
+  "type" : "replay_step_start",
+  "stepId" : 4,
+  "action" : "CLICK",
+  "description" : "Confirm and Open Account"
+}
+{
+  "ts" : "2026-09-16T19:28:18.987148788Z",
+  "type" : "replay_success",
+  "outputs" : { }
+}
