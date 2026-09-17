@@ -124,7 +124,8 @@ public class Main {
         server.start();
         try {
             boolean genuine = opts.containsKey("genuine");
-            String goal = "Look up member 12345 and read their current savings balance, "
+                        String goal = "Starting URL (navigate here first): " + baseUrl + "/search\n\n"
+                    + "Goal: Look up member 12345 and read their current savings balance, "
                     + "confirming the member detail page is reached.";
             Map<String, ParamSpec> params = Map.of("memberId",
                     new ParamSpec("memberId", Enums.ParamType.STRING, true, "The member to look up", "12345"));
