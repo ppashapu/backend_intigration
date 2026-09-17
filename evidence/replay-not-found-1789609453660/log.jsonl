@@ -1,26 +1,26 @@
 {
-  "ts" : "2026-09-16T22:26:52.410454Z",
+  "ts" : "2026-09-17T01:44:13.660469Z",
   "type" : "replay_step_start",
-  "stepId" : 1,
+  "action" : "NAVIGATE",
   "description" : "Navigate to /search",
-  "action" : "NAVIGATE"
+  "stepId" : 1
 }
 {
-  "ts" : "2026-09-16T22:26:52.413748Z",
+  "ts" : "2026-09-17T01:44:13.663455Z",
   "type" : "replay_step_start",
-  "stepId" : 2,
+  "action" : "TYPE",
   "description" : "Type into \"memberId\"",
-  "action" : "TYPE"
+  "stepId" : 2
 }
 {
-  "ts" : "2026-09-16T22:26:52.414195Z",
+  "ts" : "2026-09-17T01:44:13.663786Z",
   "type" : "replay_step_start",
-  "stepId" : 3,
+  "action" : "CLICK",
   "description" : "Click \"Search\"",
-  "action" : "CLICK"
+  "stepId" : 3
 }
 {
-  "ts" : "2026-09-16T22:26:52.416105Z",
+  "ts" : "2026-09-17T01:44:13.665594Z",
   "type" : "business_outcome",
   "code" : "MEMBER_NOT_FOUND"
 }

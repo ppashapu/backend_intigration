@@ -1,0 +1,48 @@
+{
+  "ts" : "2026-09-17T01:44:13.667785Z",
+  "type" : "replay_step_start",
+  "action" : "NAVIGATE",
+  "description" : "Navigate to /search",
+  "stepId" : 1
+}
+{
+  "ts" : "2026-09-17T01:44:13.670562Z",
+  "type" : "replay_step_start",
+  "action" : "TYPE",
+  "description" : "Type into \"memberId\"",
+  "stepId" : 2
+}
+{
+  "ts" : "2026-09-17T01:44:13.670889Z",
+  "type" : "replay_step_start",
+  "action" : "CLICK",
+  "description" : "Click \"Search\"",
+  "stepId" : 3
+}
+{
+  "ts" : "2026-09-17T01:44:13.675377Z",
+  "type" : "recoverable_condition",
+  "attempt" : 1,
+  "code" : "SYSTEM_BUSY"
+}
+{
+  "ts" : "2026-09-17T01:44:13.678025Z",
+  "type" : "replay_step_start",
+  "action" : "CLICK",
+  "description" : "Click \"View\"",
+  "stepId" : 4
+}
+{
+  "ts" : "2026-09-17T01:44:13.679564Z",
+  "type" : "replay_step_start",
+  "action" : "EXTRACT",
+  "description" : "Extract \"savingsBalance\" from \"$4,210.55\"",
+  "stepId" : 5
+}
+{
+  "ts" : "2026-09-17T01:44:13.679782Z",
+  "type" : "replay_success",
+  "outputs" : {
+    "savingsBalance" : "$150.00"
+  }
+}

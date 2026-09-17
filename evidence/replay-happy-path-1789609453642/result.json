@@ -1,12 +1,12 @@
 {
   "outcomeType" : "SUCCESS",
   "outputs" : {
-    "balance" : "$4,210.55"
+    "savingsBalance" : "$4,210.55"
   },
   "businessOutcomeCode" : null,
   "businessOutcomeMessage" : null,
   "failure" : null,
   "recoveredEvents" : [ ],
-  "evidenceDir" : "./evidence/replay-happy-path-1789597612391",
-  "durationMs" : 10
+  "evidenceDir" : "./evidence/replay-happy-path-1789609453642",
+  "durationMs" : 8
 }

@@ -3,7 +3,7 @@
   "version" : 1,
   "status" : "DRAFT",
   "name" : "Look up member savings balance",
-  "goalDescription" : "Look up member 12345 and read their current savings balance, confirming the member detail page is reached.",
+  "goalDescription" : "Starting URL (navigate here first): http://127.0.0.1:8085/search\n\nGoal: Look up member 12345 and read their current savings balance, confirming the member detail page is reached.",
   "appTarget" : {
     "appId" : "lookup-member-balance",
     "vendorProduct" : "legacy-core-banking-demo",
@@ -18,10 +18,10 @@
     "example" : "12345"
   } ],
   "outputs" : [ {
-    "name" : "balance",
+    "name" : "savingsBalance",
     "type" : "STRING",
     "required" : true,
-    "description" : "Extracted value: balance",
+    "description" : "Extracted value: savingsBalance",
     "example" : null
   } ],
   "steps" : [ {
@@ -96,7 +96,7 @@
   }, {
     "stepId" : 5,
     "action" : "EXTRACT",
-    "description" : "Extract \"balance\" from \"$4,210.55\"",
+    "description" : "Extract \"savingsBalance\" from \"$4,210.55\"",
     "target" : {
       "strategies" : [ {
         "kind" : "TEST_ID",
@@ -110,7 +110,7 @@
       "frameChain" : [ ]
     },
     "value" : null,
-    "extractAs" : "balance",
+    "extractAs" : "savingsBalance",
     "riskLevel" : "SAFE",
     "timeoutMs" : 5000
   } ],
@@ -121,6 +121,6 @@
     "description" : "Replay must land on a URL containing /member/view"
   },
   "overallRisk" : "SAFE",
-  "sourceDiscoveryRunId" : "discover-lookup-member-balance-1789597612124",
-  "createdAt" : "2026-09-16T22:26:52.357978Z"
+  "sourceDiscoveryRunId" : "discover-lookup-member-balance-1789609439751",
+  "createdAt" : "2026-09-17T01:44:13.612657Z"
 }

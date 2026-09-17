@@ -1,0 +1,42 @@
+{
+  "ts" : "2026-09-17T01:44:13.645035Z",
+  "type" : "replay_step_start",
+  "action" : "NAVIGATE",
+  "description" : "Navigate to /search",
+  "stepId" : 1
+}
+{
+  "ts" : "2026-09-17T01:44:13.648427Z",
+  "type" : "replay_step_start",
+  "action" : "TYPE",
+  "description" : "Type into \"memberId\"",
+  "stepId" : 2
+}
+{
+  "ts" : "2026-09-17T01:44:13.648778Z",
+  "type" : "replay_step_start",
+  "action" : "CLICK",
+  "description" : "Click \"Search\"",
+  "stepId" : 3
+}
+{
+  "ts" : "2026-09-17T01:44:13.650789Z",
+  "type" : "replay_step_start",
+  "action" : "CLICK",
+  "description" : "Click \"View\"",
+  "stepId" : 4
+}
+{
+  "ts" : "2026-09-17T01:44:13.652850Z",
+  "type" : "replay_step_start",
+  "action" : "EXTRACT",
+  "description" : "Extract \"savingsBalance\" from \"$4,210.55\"",
+  "stepId" : 5
+}
+{
+  "ts" : "2026-09-17T01:44:13.653164Z",
+  "type" : "replay_success",
+  "outputs" : {
+    "savingsBalance" : "$4,210.55"
+  }
+}

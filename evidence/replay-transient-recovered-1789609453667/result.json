@@ -1,12 +1,12 @@
 {
   "outcomeType" : "SUCCESS",
   "outputs" : {
-    "balance" : "$150.00"
+    "savingsBalance" : "$150.00"
   },
   "businessOutcomeCode" : null,
   "businessOutcomeMessage" : null,
   "failure" : null,
   "recoveredEvents" : [ "step 3: recovered from 'SYSTEM_BUSY' (attempt 1)" ],
-  "evidenceDir" : "./evidence/replay-transient-recovered-1789597612418",
-  "durationMs" : 14
+  "evidenceDir" : "./evidence/replay-transient-recovered-1789609453667",
+  "durationMs" : 12
 }
